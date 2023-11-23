@@ -11,7 +11,7 @@ const { signUp, login,
     makeAdmin,
     makeMeAdmin,
     removeAdmin
-} = require("../controllers/user")
+} = require("../controllers/User")
 
 
 const router = express.Router()
