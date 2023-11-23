@@ -8,6 +8,8 @@ const user = require('./routes/user').router
 const ministry = require('./routes/ministry').router
 const songs = require("./routes/song").router
 const backup = require("./routes/backup").router
+const minType = require("./routes/ministryType").router
+// const ministrationType = require("./routes/ministryType").router
 
 
 require('dotenv').config()
@@ -23,6 +25,7 @@ app.use("/api/user", user);
 app.use("/api/", ministry);
 app.use("/api", songs)
 app.use("/api", backup)
+app.use("/api", minType)
 //to test nodejs app
 
 app.get('/', (req, res) => {
