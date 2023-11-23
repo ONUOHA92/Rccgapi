@@ -1,6 +1,6 @@
 const express = require('express');
 const verify = require('../middleware/auth')
-const { isAdmin } = require('../middleware/isAdmin')
+// const { isAdmin } = require('../middleware/isAdmin')
 const { signUp, login,
     verifyOTP,
     deleteUsers,
