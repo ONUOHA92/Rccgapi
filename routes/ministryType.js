@@ -7,8 +7,8 @@ const verify = require('../middleware/auth')
 const router = express.Router()
 
 //create at /api/user/ministry
-router.post('/create/ministry-types', verify, createMinistryTpe);
-router.get('/get/ministry-types', verify, getMinistyType);
+router.post('/create/ministry-types', createMinistryTpe);
+router.get('/get/ministry-types', getMinistyType);
 
 
 
